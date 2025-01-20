@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guida Digitale per Eredità</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-slate-50">
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden bg-gradient-to-br from-indigo-50 via-purple-50 to-blue-50">
+    <div class="relative max-w-6xl mx-auto px-4 pt-24 pb-20 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto backdrop-blur-sm">
+        <span class="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-medium bg-white/40 text-indigo-600 ring-1 ring-indigo-100 backdrop-blur-sm mb-8">
+          Guida gratuita per elaborare il lutto digitale
+        </span>
+        
+        <h1 class="text-5xl font-bold tracking-tight text-gray-900 mb-6">
+          Proteggi i ricordi digitali <br />
+          <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600">
+            dei tuoi cari
+          </span>
+        </h1>
+        
+        <p class="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+          Ti guidiamo nel recupero e nella gestione degli account digitali di chi non c'è più, 
+          con rispetto e professionalità
+        </p>
+        
+        <div class="bg-white/60 backdrop-blur-md rounded-2xl p-8 shadow-xl ring-1 ring-gray-100">
+          <form id="email-form" class="max-w-md mx-auto">
+            <div class="flex gap-4">
+              <input type="email" id="email-input" placeholder="Il tuo indirizzo email" class="flex-1 px-4 py-3 rounded-xl border border-gray-200 bg-white/80" required />
+              <button type="submit" class="px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl hover:opacity-90 transition-opacity flex items-center">
+                Richiedi
+              </button>
+            </div>
+            <p class="text-sm text-gray-500 mt-3">
+              Rispettiamo la tua privacy. Non condivideremo mai i tuoi dati.
+            </p>
+          </form>
+          <div id="thank-you-message" class="hidden bg-green-50 text-green-700 p-4 rounded-xl">
+            La guida è in arrivo nella tua email ❤️
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="max-w-6xl mx-auto px-4 py-24 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-8 bg-white rounded-2xl shadow-lg ring-1 ring-gray-100">
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">Processo Sicuro</h3>
+        <p class="text-gray-600">Procedure verificate per recuperare gli account in modo sicuro e legale</p>
+      </div>
+      <div class="p-8 bg-white rounded-2xl shadow-lg ring-1 ring-gray-100">
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">Supporto Empatico</h3>
+        <p class="text-gray-600">Ti accompagniamo in ogni fase con sensibilità e comprensione</p>
+      </div>
+      <div class="p-8 bg-white rounded-2xl shadow-lg ring-1 ring-gray-100">
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">Team Esperto</h3>
+        <p class="text-gray-600">Professionisti specializzati nella gestione dell'eredità digitale</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-100">
+    <div class="max-w-6xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+      <div class="text-center text-gray-500 text-sm">
+        © 2024 Digital Legacy · Proteggiamo i ricordi digitali con cura
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('email-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('thank-you-message').classList.remove('hidden');
+      document.getElementById('email-form').classList.add('hidden');
+    });
+  </script>
+</body>
+</html>
